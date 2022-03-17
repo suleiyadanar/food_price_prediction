@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Price Predictor</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <h1 class="title">Food Price Predictor</h1>
+    <div class="bg"></div>
+    <form class="form">
+        <h2>Commodity</h2>
+        <div class="switch-field">
+            <input type="radio" id="radio-com-1" name="uiCom" value="0" checked/>
+            <label for="radio-com-1">0</label>
+            <input type="radio" id="radio-com-2" name="uiCom" value="1"/>
+            <label for="radio-com-1">1</label>
+        </div>
+        <h2>Sales Catagory</h2>
+        <div class="switch-field">
+            <input type="radio" id="radio-sale-1" name="uiSale" value="0"/>
+            <label for="radio-sale-1">0</label>
+            <input type="radio" id="radio-sale-2" name="uiSale" value="1" checked/>
+            <label for="radio-sale-1">1</label>
+        </div>
+        <h2>Location</h2>
+	    <div>
+        <select class="location" name="" id="uiLocations">
+        <option value="" disabled="disabled" selected="selected">Choose a Location</option>
+		    <option>Afghanistan</option>
+            <option>Zimbabwe</option>
+         </select>
+        </div>
+    <button class="submit" onclick="onClickeEstimatePrice()" type="button">Estimate Price</button>
+	<div id="uiEstimatePrice" class="result">	<h2></h2> </div>
+    </form>
+</body>
+</html>
